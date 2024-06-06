@@ -1,0 +1,5 @@
+<button bindtap="giveme">点我要请求</button>
+<view wx:for="{{list}}">
+    {{item.published_at}}
+    <image src="{{item.published_at}}" mode=""/>
+</view>

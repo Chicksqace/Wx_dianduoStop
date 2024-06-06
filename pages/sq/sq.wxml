@@ -1,0 +1,35 @@
+<view class="community" style="background-image: url(/images/bj/s.jpg);">
+  <view class="community-header">
+    <text class="header-title">社区</text>
+    <navigator class="header-more" url="/pages/community/more" bindtap="pinglun">更多</navigator>
+  </view>
+  <scroll-view class="community-content" scroll-x="true">
+    <view class="community-item" bindtap="handleTopicClick">
+      <image class="item-image" src="{{topic.icon}}"></image>
+      <text class="item-title">{{topic.title}}</text>
+    </view>
+    <view class="community-item" bindtap="handlePostClick">
+      <image class="item-image" src="{{post.icon}}"></image>
+      <text class="item-title">{{post.title}}</text>
+    </view>
+    <view class="community-item" bindtap="handleUserClick">
+      <image class="item-image" src="{{user.icon}}"></image>
+      <text class="item-title">{{user.title}}</text>
+    </view>
+  </scroll-view>
+  <view class="community-section">
+    <text class="section-title">热门话题</text>
+    <view class="topic-list">
+      <block wx:for="{{topics}}" wx:key="{{topic.id}}">
+        <view class="topic-item" bindtap="handleTopicItemClick" data-id="{{item.id}}">
+          <image class="topic-image" src="{{item.image}}"></image>
+          <text class="topic-title">{{item.title}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+<text style="position: absolute; top: 100%; left: 45%;color: rgb(130, 181, 226);">在从</text>
+<text style="position: absolute; top: 105%; left: 45%;color: rgb(147, 188, 224)">此此</text>
+<text style="position: absolute; top: 110%; left: 45%;color: rgb(173, 197, 218)">遇出</text>
+<text style="position: absolute; top: 115%; left: 45%;color: rgb(197, 213, 228)">见发</text>

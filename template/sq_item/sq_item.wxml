@@ -1,0 +1,32 @@
+<template name="sq_item">
+
+    <view class="content" >
+      <view class="item_content_top">
+        <view class="item_content_left">
+          <image src="../../images/tx/n.jpg" mode=""/>
+        </view>
+        <view class="item_content_right">
+          <view class="h3">
+            用户二
+          </view>
+          <view class="pl">
+          <text >绿色环保，人人有责。每个人都可以从小事做起，比如减少用水、节约用电、骑自行车出行等，来践行低碳生活。让我们一起为地球环境贡献自己的力量！</text></view>
+        </view>
+      </view>
+      <view class="item_content_bottom" >
+        <view class="icon">
+          <text>点赞</text>
+          <image src="../../images/gn/z.png" mode=""/>
+        </view>
+        <view class="icon">
+          <text>评论</text>
+          <image src="../../images/gn/p.png" mode=""/>
+        </view>
+        <view class="icon">
+          <text>关注</text>
+
+        </view>
+      </view>
+      
+    </view>
+  </template>

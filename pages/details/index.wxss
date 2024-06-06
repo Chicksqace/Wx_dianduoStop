@@ -1,0 +1,289 @@
+swiper{
+  width: 100%;
+}
+swiper image{
+  width: 100%;
+}
+.title{
+  font-size: 38rpx;
+  color: #969696;
+  padding: 8px 12px 4px 12px;
+  text-align: center;
+}
+.price{
+  font-size: 20px;
+  color: #ff5f19; 
+  padding: 0 12px;
+  border-bottom: 1px solid #dedede;
+}
+.price text{
+  font-size: 14px;
+}
+
+.spec{
+  font-size: 54rpx;
+  color: #333333;
+}
+
+.bottom{
+  height: 8vh;
+  overflow: hidden;
+  display: flex;
+
+}
+
+.bottom .btn{
+  flex: 1 0 45%;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background: #000;
+  line-height: 8vh;
+}
+
+.bottom .icon{
+  flex: 1 0 10%;
+  font-size: 10px;
+  text-align: center;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  background-color: #F6F6F6;
+}
+.bottom .icon image{
+   text-align: center;
+  padding-top: 30rpx;
+}
+.bottom .icon text{
+  display: block;
+  
+}
+
+.freight{
+  display: flex;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  color: #666666;
+ flex-direction: row-reverse ;
+  padding:0 12px;
+}
+.text{
+  display: flex;
+  flex: 0 0 35%;  
+  
+}
+
+
+.label image {
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+}
+
+
+
+
+.choice{
+  line-height: 35px;
+  padding: 0 12px;
+  font-size: 12px;
+  color: #333333;
+  border-bottom: 2px solid #dedede;
+}
+
+.tab{
+  display: flex;
+}
+
+.tab view{
+  flex:1 0 33%;
+  text-align: center;
+  font-size: 36rpx;
+  color: #969696;
+  line-height: 40px;
+  border-top: 5px solid #fbfbfb;
+}
+.tab-acitve{
+  color: #000;
+  border-bottom: 1px solid #E38627;
+  padding-bottom:5px;
+}
+
+
+
+.popup{
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.popup .content{
+  height: 48vh;
+  background: #fff;
+}
+
+.popup .btn{
+  height: 8vh;
+  background: #ff5f19;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 8vh;
+}
+.popup .text{
+  flex: 1 1 auto;
+  padding: 10px 0 0 8px;
+}
+.popup .text view{
+  font-size: 17px;
+  color: #ff5f19;
+}
+
+.popup .title{
+  margin-top: 30vh;
+  height: 14vh;
+  display: flex;
+  border-bottom: 1px solid #dedede;
+  padding:0 10px;
+  background: #fff;
+}
+
+.popup .title .img{
+  flex: 0 1 auto;
+  width: 84px;
+  height: 84px;
+  margin-top:-15px;
+}
+.popup .title .img image{
+  height: 84px;
+  width: 84px;
+}
+
+.popup .title .icon{
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  padding-top: 10px;
+}
+.popup .title .icon image{
+  width: 22px;
+  height: 22px;
+}
+.popup .content .item {
+  padding: 0 15px;
+}
+.popup .content .item text{
+  font-size: 14px;
+  color: #333333;
+}
+.popup .content .item .list{
+  display: flex;
+  flex-wrap:wrap;
+  margin-top: 10px;
+}
+.popup .content .item .list view{
+  flex: 0 1 auto;
+  font-size: 12px;
+  color: #333333;
+  line-height: 28px;
+  padding: 0 15px;
+  border: 1px solid #979797;
+  border-radius: 2px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.active{
+  border-color: #ff5f19 !important;
+  color: #ff5f19 !important;
+}
+.content{width:95%;
+margin: 0 auto;
+display: block;
+padding-top: 15rpx;
+
+
+}
+.duanluo text{width: 100%;}
+.xiangqing{font-size:30rpx; color: #969696; }
+.biaot{font-size:32rpx; color: #000; margin-top:20px; }
+.xuanze{display: flex; width: 80%; margin: 0 auto; }
+
+.xuanze  view{
+ text-align: center;
+  font-size: 36rpx;
+  color: #000;
+  line-height: 80rpx;
+   justify-content: space-between;
+ }
+ .xuanze picker{
+   width: 50%;
+  
+ }
+ .color{
+font-size: 25rpx;
+  width: 30rpx;
+   height:30rpx;
+ 
+  border: 1px #000 solid;
+ margin-right: 15rpx;
+
+ 
+  
+}
+.xuanzeyanse {
+  display: flex;
+   flex-direction: row;
+  flex: 0 1 50%; 
+ 
+}
+.xuanzeyanse picker view{
+ 
+ line-height: 80rpx; 
+ text-align: center;
+  margin-left: 15rpx;
+
+
+}
+.xuanzeyanse {
+ background: #F6F6F6;
+
+}
+.xuanze text{
+  font-size:28rpx;
+ 
+}
+.jiaobiao{
+  display: block;
+  text-align: center;
+  margin: -35px auto;
+  width: 35px;
+  height: 20px;
+
+  }
+.jiaobiao text{  display: block;
+border-radius: 25px;
+margin-left: 20px;
+position: absolute;
+z-index: 99999;
+width: 15px;
+height: 15px;
+ text-align: center;
+ font-size: 10px;
+ color: #FFF;
+  }
+.swnum{
+ opacity: 0.5;
+background:#000000;
+margin-top: -100rpx;
+color:#FFFFFF;
+width:102rpx; 
+line-height: 56rpx;
+text-align: center;
+float:right;
+margin-right: 72rpx;
+font-size: 26rpx;
+}

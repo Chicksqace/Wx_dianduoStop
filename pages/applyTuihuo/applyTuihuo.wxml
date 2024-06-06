@@ -1,0 +1,150 @@
+<!--客服悬浮-->
+<image src="/assets/CS.png" class="cs" mode="scaleToFill">
+  <button class="cs_but" open-type="contact">进入客服会话</button>
+</image>
+<!--end-->
+
+
+<scroll-view class="body" id='{{empflag  ? "isHidden":""}}' style="background:#F6F6F6;">
+
+
+ <view style="background:#FFF;padding-bottom:20px;">
+  <view class="status_v">
+    <view class="status_text">
+      <text>商品状态</text>
+    </view>
+    <view class="status_picker">
+      <picker class="status_list" bindchange="PickerChange" value="{{index_list_status}}" range="{{list_status_data}}">
+        <text bindtap="">{{list_status_data[index_list_status]}}</text>
+        <image src="/assets/morec.png" mode="scaleToFill"></image>
+      </picker>
+    </view>
+  </view>
+   <view class="status_v">
+    <view class="status_text">
+      <text>退货原因</text>
+    </view>
+    <view class="status_picker">
+      <picker class="status_list"  bindchange="PickerChange1" value="{{index_list_yuanyin}}" range="{{list_yuanyin_data}}">
+        <text bindtap="">{{list_yuanyin_data[index_list_yuanyin]}}</text>
+        <image src="/assets/morec.png" mode="scaleToFill"></image>
+      </picker>
+    </view>
+  </view>
+   <view class="status_v">
+    <view class="status_text">
+      <text>备注说明</text>
+    </view>
+    <view class="status_picker">
+      <textarea auto-height placeholder="" />
+    </view>
+  </view>
+
+
+  <view class="status_v" style="height:92px;">
+    <view class="status_text">
+      <text>上传凭证</text>
+    </view>
+   <view class="upload_imgs">
+      <view class="upload_img1" bindtap="upload_pingzheng">
+        <image class="upload_img2" src="/assets/combinedshape.png"></image>
+      </view>
+    </view>
+  </view>
+
+  
+ </view>
+
+  <view class='list' style="margin-top:10px;background:#FFF;">
+    <view style="padding:10px 0px; background:#FFF;">
+       <view class='item' style="height:20px;width:100%;">
+       请选择退货商品
+
+      </view>
+    <block wx:key="id" wx:for="{{cart_list}}">
+      <view class='item'>
+        <navigator class='content' hover-class="none" url="">
+         <view class='label' bindtap="labelFun"  data-index="{{index}}" data-id="{{item.id}}">
+           <image style="width:20px; height:20px;" wx:if="{{item.select}}" src='/images/img/choice_y.png'></image>
+           <image style="width:20px; height:20px;" wx:else src='/images/img/choice_n.png'></image>
+         </view>
+          <image src='{{item.src}}'></image>
+          <view class='text'>
+            <view class='spec'>
+              <view class='left'>{{item.title}}</view>
+              <view class='right'>¥{{item.price}}</view>
+            </view>
+            <view class='spec' style="font-size: 13px;color: #969696; margin-top:8px;">颜色：{{item.color}}</view>
+            <view class='spec2'>
+              <view class='left'>{{item.size}}</view>
+              <view class='right' wx:if="{{item.bnum>1}}">
+
+                <view class='title'>
+                  <text class='{{item.num==1?"prohibit1":""}}' bindtap='reduceFun' data-index="{{index}}" data-item="{{item}}" >-</text>
+                 <text>{{item.num}}</text>
+                  <text bindtap='plusFun' data-index="{{index}}" data-item="{{item}}">+</text>
+                </view>
+                
+
+              </view>
+               <view class='right' wx:if="{{item.bnum==1}}">
+               ×1
+              </view>
+            </view>
+
+          </view>
+        </navigator>
+
+      </view>
+    </block>
+      
+
+      <view class='leandr1'>
+        <view class='left'>商品金额</view>
+        <view class='right'>
+          <text class="text1">¥3528</text>
+        </view>
+      </view>
+      <view class='leandr1'>
+        <view class='left'>运费</view>
+        <view class='right'>
+          <text class="text1">¥3528</text>
+        </view>
+      </view>
+      <view class='leandr1'>
+        <view class='left'>优惠券</view>
+        <view class='right'>
+
+          <text class="text1">-¥35</text>
+        </view>
+      </view>
+      <view class='leandr1'>
+        <view class='left'>退款金额将直接返回原微信支付账户</view>
+
+      </view>
+    </view>
+
+  </view>
+  
+
+  
+
+  <view class="body_buttons">
+    <view bindtap="tesEmpty" class="body_button1">
+      <text>提交退货申请</text>
+    </view>
+  </view>
+</scroll-view>
+<view class="empty_body" id='{{empflag  ? "":"isHidden"}}'>
+    <image class="empty_body_img" src="/assets/illustration/coupon.png" ></image>
+    <view class="empty_body_text">
+      <text>已收到您的退货申请</text>
+      <text style="width:408rpx;">我们将在3个工作日内审核完毕请您耐心等待</text>
+    </view>
+    <view class="empty_back">
+    <text bindtap="toshjd">查看进度</text>
+    </view>
+    <view class="empty_back1">
+    <text bindtap='backHome'>去购物</text>
+    </view>
+</view>

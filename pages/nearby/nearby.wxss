@@ -1,0 +1,48 @@
+/* pages/nearby/nearby.wxss */
+.container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+gy1 image{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.text {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.line_y {
+  width: 5px;
+  height: 24px;
+  background-color: #09bb07;
+  margin-right: 10px;
+}
+.text2 {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+.text2 text {
+  line-height: 24px;
+  color: #333;
+}
+.call-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #09bb07;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

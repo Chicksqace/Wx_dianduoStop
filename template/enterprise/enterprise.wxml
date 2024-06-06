@@ -1,0 +1,28 @@
+<!--template/enterprise.wxml-->
+<template name="enterprise">
+    <view class="enterprise">
+        <view class="enterprise_item">
+            <image src="../../images/icon/gouwuche.png" mode=""/>
+            <view class="left">
+                <view class="title">
+                {{title}}
+            </view>
+            <view class="content">
+               {{x}}
+            </view>
+            </view>
+            <view class="right">
+                <view class="price">
+                <view>
+                ￥{{price_one}}
+                </view>
+                <view>
+                    碳币折扣￥{{price_two}}
+                </view>
+            </view>
+            </view>
+            
+        </view>
+    </view>
+</template>
+

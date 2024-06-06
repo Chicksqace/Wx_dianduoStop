@@ -1,0 +1,122 @@
+<view style="height:46px;width:100%;padding-top:11px;position:fixed;z-index:9997;display:flex;align-items:flex-start;background-color:white;">
+  <view style="width:20%;padding-left:10rpx;display:flex;align-items:center;">
+    <image bindtap='back' style="width:25px; height:25px" src="/assets/icon/back.png"></image>
+  </view>
+  <view style="width:60%;display:flex;justify-content:center;align-items:center;">
+    <text style="font-size:18px;">{{navTitle}}</text>
+  </view>
+  <!-- <view style="width:20%;"></view> -->
+</view>
+
+<image src="/assets/CS.png" class="cs" mode="scaleToFill">
+  <button class="cs_but" open-type="contact">进入客服会话</button>
+</image>
+
+<scroll-view style="margin-top:20rpx;position:relative;z-index:9995;" >
+  <view class='find' bindtap="Tosearch">
+    <input class='cn' placeholder="搜索商品"></input>
+    <view bindtap='/pages/search/index'>
+      <image style='width:40rpx;height:40rpx;' src='/assets/icon/32px/search.png'></image>
+    </view>
+  </view>
+  <view class='yinying'></view>
+  <view class="tiaojian">
+    <picker class="pailie" bindchange="PickerChange_pailie" value="{{index_pailie}}" range="{{pailie_data}}">
+      <text bindtap="clickmepailie">{{pailie_data[index_pailie]}}</text>
+      <image src="/assets/morec.png" mode="scaleToFill"></image>
+    </picker>
+    <view class="saixuan" bindtap="clickme_saixuan">
+      <text>筛选</text>
+      <image src="/assets/filter.png" mode="scaleToFill"></image>
+    </view>
+  </view>
+  <view class="topmeun">
+    <block wx:key="id" wx:for="{{topmeun}}">
+      <view id='{{curNav == item.id ? "active":""}}' class='topmeun_v' bindtap="switchbuttonTab" data-index="{{index}}" data-id="{{item.id}}" data-name="{{item.menu_name}}">
+        <text id='{{curNav == item.id ? "active":""}}'>{{item.menu_name}}</text>
+        <view class="topmeun_ts"></view>
+      </view>
+    </block>
+  </view>
+  <view class='list'>
+    <view class='item'>
+      <navigator hover-class="none" url="/pages/details/index?id={{item._id}}">
+        <image class='product' src='/images/img/pig1.jpg'></image>
+        <text class='text'>羊毛衫</text>
+        <!-- <text class='text'>羊毛衫.{{statusBarHeight}}</text> -->
+      </navigator>
+      <view class='price'>
+        <text style='text-decoration:line-through;'>￥90 </text>
+        <text>￥2000</text>
+        <view class='colorview'>
+          <view class='color' style='background-color:#000'></view>
+          <view class='color' style='background-color:#3A4452'></view>
+          <view class='color' style='background-color:#DDD'></view>
+        </view>
+      </view>
+    </view>
+    <view class='item'>
+      <navigator hover-class="none" url="/pages/details/index?id={{item._id}}">
+        <image class='product' src='/images/img/pig2.jpg'></image>
+        <text class='text'>羊毛衫.</text>
+      </navigator>
+      <view class='price'>
+        <text>￥2000</text>
+        <view class='colorview'>
+          <view class='color' style='background-color:#000'></view>
+          <view class='color' style='background-color:#3A4452'></view>
+          <view class='color' style='background-color:#DDD'></view>
+        </view>
+      </view>
+    </view>
+    <view class='item'>
+      <navigator hover-class="none" url="/pages/details/index?id={{item._id}}">
+        <image class='product' src='/images/img/pig5.jpg'></image>
+        <text class='text'>羊毛衫蓝色条送</text>
+      </navigator>
+      <view class='price'>
+        <text>￥2000</text>
+        <view class='colorview'>
+          <view class='color' style='background-color:#000'></view>
+          <view class='color' style='background-color:#3A4452'></view>
+          <view class='color' style='background-color:#DDD'></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+  <view class="top_1">
+    <view class="top_cz" bindtap="bindtop_cz">
+      <text>重置</text>
+    </view>
+    <view class="top_sx">
+      <text>筛选</text>
+    </view>
+    <view class="top_qr" bindtap="hideModal">
+      <text>确认</text>
+    </view>
+  </view>
+  <view style="width:100%;height:1rpx;background-color: #969696"></view>
+  <view class="tanchuang_body">
+    <block wx:key="id" wx:for="{{suaixuanData}}" wx:for-index='onekey'>
+      <view class="tanchuang_item">
+        <view class="tanchuang_itemtitle">
+          <text>{{item.name}}</text>
+        </view>
+        <view class="tanchuang_itemcon">
+          <block wx:for="{{item.xilie}}" wx:for-item="twodata" wx:key="name">
+            <view id="chicun" bindtap="shaixuan_touch" data-one="{{onekey}}" data-index="{{index}}" class='{{twodata.choseFlag ? "saixuan_active":""}}' wx:if="{{item.name=='尺寸'}}">
+              <text class='{{twodata.choseFlag ? "saixuan_textactive":"saixuan_textnoactive"}}'>{{twodata.name}}</text>
+            </view>
+            <view bindtap="shaixuan_touch" data-one="{{onekey}}" data-index="{{index}}" class='{{twodata.choseFlag ? "saixuan_active":""}}' wx:else>
+              <text class='{{twodata.choseFlag ? "saixuan_textactive":"saixuan_textnoactive"}}'>{{twodata.name}}</text>
+            </view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

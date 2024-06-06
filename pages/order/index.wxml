@@ -1,0 +1,131 @@
+<!--客服悬浮-->
+  <image src="/assets/CS.png" style=" width:64px;height:64px;position: fixed;bottom: 374rpx;right: 30rpx;z-index: 99998;" mode="scaleToFill">
+    <button style="width:64px;height:64px;position: fixed;bottom: 374rpx;right: 30rpx;z-index: 99999;opacity:0;" open-type="contact">进入客服会话</button>
+  </image>
+<!--end-->
+
+<view class="topmeun">
+    <block wx:key="id" wx:for="{{topmeun}}">
+      <view id='{{curNav == item.id ? "active":""}}' class='topmeun_v' bindtap="switchbuttonTab" data-index="{{index}}" data-id="{{item.id}}" data-name="{{item.menu_name}}" ><text id='{{curNav == item.id ? "active":""}}'>{{item.menu_name}}</text>
+        <view class="topmeun_ts" ></view>
+      </view>
+    </block>
+  
+  </view>
+
+<view class='main' id='{{empflag  ? "isHidden":""}}'>
+  <scroll-view scroll-y class='list'>
+  <view style="margin-bottom:10px; background:#FFF;"> <!--循环-->
+    <view class='leandr'>
+            <view class='left'>2024/05/24 18:26:06</view>
+            <view class='right'><text>待付款</text></view>
+    </view>
+    <view class='item'>
+      <navigator class='content' hover-class="none" url="/pages/orderDetails/index">
+        <image src='/images/img/tx.jpg'></image>
+        <view class='text'>
+           <view class='spec'>
+            <view class='left'>黑色棉麻长裤</view>
+            <view class='right'>¥200</view>
+          </view>
+          <view class='spec' style="font-size: 13px;color: #969696; margin-top:8px;">颜色：黑色</view>
+          <view class='spec2'>
+            <view class='left'>175/455</view>
+            <view class='right'>×2</view>
+          </view>
+        
+        </view>
+      </navigator>
+      
+    </view>
+    <view class='item'>
+      <navigator class='content' hover-class="none" url="">
+        <image src='/images/img/tx.jpg'></image>
+        <view class='text'>
+           <view class='spec'>
+            <view class='left'>黑色棉麻长裤</view>
+            <view class='right'>¥200</view>
+          </view>
+          <view class='spec' style="font-size: 13px;color: #969696; margin-top:8px;">颜色：黑色</view>
+          <view class='spec2'>
+            <view class='left'>175/455</view>
+            <view class='right'>×2</view>
+          </view>
+        
+        </view>
+      </navigator>
+      
+    </view>
+    <view class='leandr1'>
+          
+        <view class='right'><text class="text1">共1件商品，合计</text><text class="text2">¥256</text></view>
+    </view>
+
+    <view class='leandr1' style="padding-bottom:15px;">
+          
+        <view class='right'><text class="textw">查看物流</text><text class="textq">确认收货</text></view>
+    </view>
+
+     </view>
+   <view style="margin-bottom:10px; background:#FFF;">
+    <view class='leandr'>
+            <view class='left'>2024/05/24 18:26:06</view>
+            <view class='right'><text>待付款</text></view>
+    </view>
+    <view class='item'>
+      <navigator class='content' hover-class="none" url="">
+        <image src='/images/img/tx.jpg'></image>
+        <view class='text'>
+           <view class='spec'>
+            <view class='left'>黑色棉麻长裤</view>
+            <view class='right'>¥200</view>
+          </view>
+          <view class='spec' style="font-size: 13px;color: #969696; margin-top:8px;">颜色：黑色</view>
+          <view class='spec2'>
+            <view class='left'>175/455</view>
+            <view class='right'>×2</view>
+          </view>
+        
+        </view>
+      </navigator>
+      
+    </view>
+    <view class='item'>
+      <navigator class='content' hover-class="none" url="">
+        <image src='/images/img/tx.jpg'></image>
+        <view class='text'>
+           <view class='spec'>
+            <view class='left'>黑色棉麻长裤</view>
+            <view class='right'>¥200</view>
+          </view>
+          <view class='spec' style="font-size: 13px;color: #969696; margin-top:8px;">颜色：黑色</view>
+          <view class='spec2'>
+            <view class='left'>175/455</view>
+            <view class='right'>×2</view>
+          </view>
+        
+        </view>
+      </navigator>
+      
+    </view>
+    <view class='leandr1'>
+          
+        <view class='right'><text class="text1">共1件商品，合计</text><text class="text2">¥256</text></view>
+    </view>
+
+    <view class='leandr1' style="padding-bottom:15px;">
+          
+        <view class='right'><text class="textw">查看物流</text><text class="textq">确认收货</text></view>
+    </view>
+
+     </view>
+
+     
+  
+  </scroll-view>
+</view>
+   <view class="empty_body" id='{{empflag  ? "":"isHidden"}}' >
+     <image class="empty_body_img" src="/assets/illustration/no-order.png" ></image>
+    <view class="empty_body_text"><text>暂无订单</text></view>
+    <view class="empty_back" bindtap="backHome"><text>去购物</text></view>
+  </view>

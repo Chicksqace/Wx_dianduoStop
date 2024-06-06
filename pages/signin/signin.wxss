@@ -1,0 +1,72 @@
+/* pages/index/index.wxss */
+
+.container {
+  padding: 20px;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* 添加背景渐变 */
+  min-height: 100vh; /* 使背景覆盖整个页面 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-in-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.sign-in-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sign-in-button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.sign-in-button:active {
+  background-color: #0056b3;
+}
+
+.last-sign-in, .sign-in-reward {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.sign-in-history {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+.history-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.history-item {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555555;
+  text-align: center;
+}

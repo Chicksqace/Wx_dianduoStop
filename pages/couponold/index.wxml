@@ -1,0 +1,35 @@
+<view style="{{'height:' + navigationBarHeight}}; width:100%;  background-color: #FFF; position:fixed; z-index:9998;"></view>
+<view style="{{'height:' + navigationBarHeight}};"></view>
+
+<!--客服悬浮-->
+  <image src="/assets/CS.png" style=" width:64px;height:64px;position: fixed;bottom: 374rpx;right: 30rpx;z-index: 99998;" mode="scaleToFill">
+    <button style="width:64px;height:64px;position: fixed;bottom: 374rpx;right: 30rpx;z-index: 99999;opacity:0;" open-type="contact">进入客服会话</button>
+  </image>
+<!--end-->
+
+<view style='height:100vh;'>
+  
+  <scroll-view scroll-y class='list'>
+    <view class='item' >
+      <view class='left'>
+        <view> ￥50</view>
+        <view style="font-size: 12px;color: #969696;">满1000减50</view>
+      </view>
+       <view class='right'>
+          <view style='font-size: 15px; color: #FFFFFF;'>新人专享</view>
+          <view>有效期至2020/02/28</view>
+         
+       
+      </view>
+       <view class='right'>
+          
+          <view class='state'>
+            <text>已使用</text>
+          
+          </view>
+       
+      </view>
+    </view>
+  </scroll-view>
+
+</view>

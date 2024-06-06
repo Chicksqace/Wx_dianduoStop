@@ -1,0 +1,26 @@
+<view class="container">
+    <view class="gy1">
+        <image src="../../images/bj/gy1.jpg"></image>
+    </view>
+    <view class="text">
+        <view class="line_y"></view>
+        <text>关于店铺</text>
+    </view> 
+    <view class="text2">
+        <text>
+            鲜果配送，是由水果进口商直销原装水果，专营进口高档水果，兼营国产优质鲜果。精选全球鲜果美食，主营各类水果产品，包括进口鲜果和国内优质鲜果。水果先生的愿望是，让客户享受到真正健康、美味的世界鲜果和管家式体贴放心的服务；为消费者提供健康、绿色、优质的鲜果产品和个性化鲜果服务，倡导轻食健康生活理念。
+            店铺地址：浙江省杭州市钱塘区白杨街道桃李苑
+            派送电话：400-0000-000
+        </text>
+    </view> 
+    <map
+        id="shopMap"
+        longitude="{{longitude}}"
+        latitude="{{latitude}}"
+        scale="16"
+        markers="{{markers}}"
+        show-location
+        style="width: 100%; height: 300px; margin-top: 20px; border-radius: 10px;">
+    </map>
+    <button type="default" bindtap="makePhoneCall" class="call-button">点击拨打派送电话</button>
+</view>

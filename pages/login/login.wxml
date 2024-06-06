@@ -1,0 +1,28 @@
+<!--pages/login/login.wxml-->
+<!--pages/swiperDome/swiperDome.wxml-->
+<view class="back">
+<image src="../../images/注册.png" style="position: absolute;" mode="widthFix"/>
+<view class="content">
+  <view class="logo">
+        <p >登录</p>
+  </view>
+  <view class="hr"></view>
+
+    <!-- 账号 -->
+      <view class="accounta">
+          <view class="title">账号</view>
+          <input class="info" placeholder="用户名/邮箱/密码" placeholder-style="color:#ccc" bindinput="accountInput"/>
+      </view>
+      <view class="hr"></view>
+      <!-- 密码 -->
+      <view class="accountb">
+          <view class="title">密码</view>
+          <input class="info" placeholder="请输入密码" password="{{isEncrypt}}" placeholder-style="color:#ccc" bindinput="pwdInput"/>
+          <view class="see" bindtap="isEncrypt">
+          </view>
+      </view>
+      <view class="hr"></view>
+      <button class="loginb" formTpye="submit" type="mytype" bindtap="login">登录</button>
+  <text class="register-tip" bindtap="reg" >没有账号？立即注册</text>
+</view>
+</view>

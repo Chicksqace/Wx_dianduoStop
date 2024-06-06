@@ -1,0 +1,7 @@
+<canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas"  bindtouchstart="touchcanvas"></canvas>
+<view class = "canvas1_button" bindtap="canvas1_click" >
+  <text style="color:{{textcolor1}}" class="canvas1_text">图表一</text>
+</view>
+<view class = "canvas2_button" bindtap="canvas2_click" >
+  <text style="color:{{textcolor2}}" class="canvas2_text">图表二</text>
+</view>

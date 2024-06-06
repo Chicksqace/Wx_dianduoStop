@@ -1,0 +1,61 @@
+<view style='height:91vh;'>
+  <view class='find'>
+    <input class='cn' placeholder="输入优惠码" bindinput="onCouponCodeInput" value="{{couponCode}}"></input>
+    <view class="chenge" bindtap="redeemCoupon">
+      兑换
+    </view>
+  </view>
+  <!-- <view style="display:black;">
+    <scroll-view scroll-y class='list'>
+      <block wx:for="{{list}}" wx:key="id">
+        <view class='item'>
+          <view class='left'>
+            <view>￥{{item.discount}}</view>
+            <view style="font-size: 12px;color: #000;">{{item.description}}</view>
+          </view>
+          <view class='right'>
+            <view style='font-size: 15px;color: #000;'>{{item.title}}</view>
+            <view>满{{item.min_spend}}元可用，特价商品除外</view>
+          </view>
+          <view class='right'>
+            <view class='state'>
+              <text>立即使用</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+    <navigator url="/pages/couponold/index" class='btn'>查看失效码 ></navigator>
+  </view> -->
+   <view style="display:black;">
+    <scroll-view scroll-y class='list'>
+      <block wx:for="{{list}}" wx:key="id">
+        <view class='item'>
+          <view class='left'>
+            <view>￥{{item.discount}}</view>
+            <view style="font-size: 12px;color: #000;">{{item.description}}</view>
+          </view>
+          <view class='right'>
+            <view style='font-size: 15px;color: #000;'>{{item.title}}</view>
+            <view>满{{item.min_spend}}元可用，特价商品除外</view>
+          </view>
+          <view class='right'>
+            <view class='state'>
+              <text>立即使用</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+    <navigator url="/pages/couponold/index" class='btn'>查看失效码 ></navigator>
+  </view>
+</view>
+<view class="empty_body" style="display:none;">
+  <image class="empty_body_img" src="/assets/illustration/coupon.png"></image>
+  <view class="empty_body_text">
+    <text>暂无优惠券</text>
+  </view>
+  <view class="empty_back">
+    <text>去购物</text>
+  </view>
+</view>

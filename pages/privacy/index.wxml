@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="card">
+        <view class="title">隐私政策</view>
+        <view class="content">
+            <view class="subtitle">我们如何收集和使用您的信息</view>
+            <view>我们可能会收集和使用以下与您相关的信息：</view>
+            <view>· 您的基本信息（例如姓名、性别、年龄）</view>
+            <view>· 您的联系方式（例如手机号码、电子邮件地址）</view>
+            <view>· 您的地理位置信息（例如城市、经纬度）</view>
+            <view>· 您的设备信息（例如设备型号、操作系统版本）</view>
+            <view>· 您的小程序使用情况（例如浏览记录、点击行为）</view>
+        </view>
+    </view>
+    <view class="card">
+        <view class="content">
+            <view class="subtitle">信息保护与安全</view>
+            <view>我们将采取合理的安全措施保护您的个人信息，防止未经授权的访问、使用、修改、泄露。</view>
+            <view>我们将不会将您的个人信息转让、披露给第三方，除非：</view>
+            <view>· 征得您的明确同意</view>
+            <view>· 法律法规要求</view>
+            <view>· 为了维护我们的合法权益</view>
+        </view>
+    </view>
+    <!-- 其他部分同理，省略 -->
+</view>

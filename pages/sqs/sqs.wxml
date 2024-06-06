@@ -1,0 +1,81 @@
+<import src="../../template/sq_item/sq_item"/>
+<view class="bg">
+  <view class="content">
+    <view class="loginTitle">
+      <view class="{{currentTab==0?'select' : 'default'}}" data-current="0" bindtap="switchNav">我的发布</view>
+      <view class="{{currentTab==1?'select' : 'default'}}" data-current="1" bindtap="switchNav">附近看看</view>
+    </view>
+    <view class="hr"></view>
+    <swiper current="{{currentTab}}" style="height:1000px">
+      <swiper-item>
+        <view class="content">
+          <block wx:for="{{myPosts}}" wx:key="index">
+            <view class="item">
+              <view class="item_content_top">
+                <view class="item_content_left">
+                  <image src="{{item.image}}" mode="aspectFill" class="avatar"/>
+                </view>
+                <view class="item_content_right">
+                  <view class="h3">{{item.username}}</view>
+                  <view class="pl">
+                    <text>{{item.text}}</text>
+                  </view>
+                </view>
+              </view>
+              <view class="item_content_bottom">
+                <view class="icon">
+                  <text>点赞</text>
+                  <image src="../../images/gn/z.png" mode="aspectFill" class="icon-image"/>
+                </view>
+                <view class="icon">
+                  <text>评论</text>
+                  <image src="../../images/gn/p.png" mode="aspectFill" class="icon-image"/>
+                </view>
+                <view class="icon">
+                  <text>关注</text>
+                </view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="content">
+          <block wx:for="{{otherPosts}}" wx:key="index">
+            <view class="item">
+              <view class="item_content_top">
+                <view class="item_content_left">
+                  <image src="{{item.image}}" mode="aspectFill" class="avatar"/>
+                </view>
+                <view class="item_content_right">
+                  <view class="h3">{{item.username}}</view>
+                  <view class="pl">
+                    <text>{{item.text}}</text>
+                  </view>
+                </view>
+              </view>
+              <view class="item_content_bottom">
+                <view class="icon">
+                  <text>点赞</text>
+                  <image src="../../images/gn/z.png" mode="aspectFill" class="icon-image"/>
+                </view>
+                <view class="icon">
+                  <text>评论</text>
+                  <image src="../../images/gn/p.png" mode="aspectFill" class="icon-image"/>
+                </view>
+                <view class="icon">
+                  <text>关注</text>
+                </view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="gb" bindtap="close" style="left:{{posX}}px;top:{{posY}}px" bindtouchmove="touchMove" bindtouchstart="touchStart" bindtouchend="touchEnd">+</view>
+  <view class="srk{{sys?'':' srkx'}}">
+    <input type="text" class="sr" bindinput="publishInput" placeholder="说点什么吧..."/>
+    <button class="fb" bindtap="publishPost">发布</button>
+  </view>
+</view>

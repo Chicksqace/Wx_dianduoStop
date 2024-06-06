@@ -1,0 +1,238 @@
+
+.main{
+  height: 100vh;
+}
+
+.tab{
+  height: 7vh;
+  display: flex;
+  line-height: 7vh;
+}
+
+.tab view{
+  flex: 1 0 auto;
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+}
+.tab .active{
+  color: #ff5f19;
+  border-bottom: 1px solid #ff5f19;
+  padding-bottom:1.8vh;
+}
+
+.list{
+  height: 93vh;
+  background: #F6F6F6;
+}
+
+.list .item{
+  display: flex;
+
+  padding: 0 16px;
+  height: 115px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.list .label{
+  flex: 0 0 auto;
+  padding:10px 0;
+}
+
+.list .content{
+  flex-grow: 1;
+  display:flex;
+}
+
+.list .content image{
+  flex: 0 0 auto;
+  height: 115px;
+  width: 78px;
+  padding-right:10px;
+}
+
+.list .content .text{
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.list .content .title{
+  overflow: hidden;
+}
+
+.list .content .spec{
+  font-size: 12px;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  line-height: 24px;    
+  max-height: 24px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-top: 10px;
+}
+
+.list .content .price{
+  display: flex;
+  font-size: 16px;
+}
+
+.list .content .price text:nth-child(1){
+  color: #ff5f19;
+  flex: 1 0 50%;
+}
+
+.list .content .price text:nth-child(2){
+  color: #999999;
+  flex: 1 0 50%;
+  text-align: right;
+}
+.topmeun{
+  width:95%;
+  margin: 25px auto;
+  height: 30px;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+ 
+}
+.topmeun_v {
+  margin-right: 14px;
+  height: 30px;
+  width: auto;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+.topmeun_ts{
+  width: 16px;
+  height: 3px;
+}
+#active{
+  color: #000;
+  font-size: 18px;
+}
+.topmeun view text {
+  font-family: PingFangSC-Regular;font-size:16px;color: #969696 ;letter-spacing: 0;
+text-align: center;height:26px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis
+}
+#active view {
+  background-color: #E38627;
+}
+.spec .right{
+font-size: 18px;
+color: #000000;
+}
+.left{
+ flex: 1 0 50%;
+  font-size: 15px;
+  color: #333333;
+  font-weight: 500;
+   }
+ .right{
+      font-size: 12px;
+  flex: 1 0 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+   }
+   .leandr{
+   display: flex;
+   height: 30px;
+  
+  padding: 0 16px;
+  padding-top: 15px;
+  align-items: center;
+  
+   }
+   .leandr .left{
+     font-size: 14px;
+      color: #969696;
+   }
+    .leandr .right text{
+      
+     border: 1px solid #9D3737;
+      border-radius: 2px;
+       border-radius: 2px; 
+       font-size: 12px;
+      color: #9D3737;
+      letter-spacing: 0;
+     text-align: center;
+     width: 60px;
+     height: 28px;
+     line-height: 28px;
+   }
+.spec2{
+  display: flex;
+  margin-top: 5px;
+}
+.spec2 .left{
+  font-size: 13px;
+color: #969696;
+}
+.spec2 .right{
+  font-size: 13px;
+color: #969696;
+}
+.leandr1{
+   display: flex;
+   height: 32px;
+  
+  padding: 0 16px;
+  
+  align-items: center;
+   margin-top: 15px;
+}
+.text1{
+  font-size: 13px;
+color: #969696;
+margin-right: 5px;
+}
+.text2{
+font-size: 18px;
+color: #000000;
+
+}
+.textw{
+  width: 72px;
+  height: 32px;
+  line-height: 32px;
+  background: #F6F6F6;
+  font-size: 13px;
+color: #969696;
+text-align: center;
+margin-right: 10px;
+}
+.textq{
+  width: 72px;
+  height: 32px;
+  line-height: 32px;
+  background: #000;
+  font-size: 13px;
+color: #FFF;
+text-align: center;
+}
+::-webkit-scrollbar { 
+	width: 0; 
+	height: 0; 
+	color: transparent; 
+}
+.empty_body{
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 50000;
+}
+.empty_body_img {
+  width:248rpx ;height:248rpx ;position: absolute;top:251rpx;left: 251rpx; 
+}
+.empty_body_text{position: absolute;top: 520rpx;left: 312rpx;display:flex;align-items:center;justify-content:center;}
+.empty_body_text text{font-family: PingFangSC-Regular;font-size: 30rpx;color: #969696;letter-spacing: 0;text-align: center;line-height: 56rpx;}
+.empty_back{position: absolute;top: 624rpx;left: 303rpx;width: 144rpx;height: 64rpx;display:flex;align-items:center;justify-content:center;background-color: #000000}
+.empty_back text{font-family: PingFangSC-Regular;font-size: 26rpx;color: #FFFFFF;letter-spacing: 0;text-align: center;}
+#isHidden{
+  display: none;
+}

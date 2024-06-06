@@ -1,0 +1,40 @@
+<!-- <view class="container"> -->
+ <view class='find' bindtap="Tosearch">
+      <input class='cn' placeholder="搜索商品"></input>
+     <view  bindtap='/pages/search/index' >
+        <image style='width:40rpx;height:40rpx;' src='/images/img/search.png'></image>
+        </view>
+  </view>
+  <!-- <view class='yinying'></view> -->
+  <view class="body">
+  <!--左菜单-->
+  <view class="leftmenu" >
+    <ul>
+      <block wx:key="id" wx:for="{{left_menus}}">
+      <!--当前项的id等于item项的id，那个就是当前状态-->
+      <!--用data-index记录这个数据在数组的下标位置，-->
+      <!--使用data-id设置每个item的id值，供打开右侧页面使用-->
+        <li>
+          <view class='box_left_item {{curNav == item.id ? "active":""}}' bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.id}}" data-name="{{item.menu_name}}">
+            <text>
+              {{item.menu_name}}
+            </text>
+             <view ></view> 
+            </view>
+        </li>
+      </block>
+    </ul>
+  </view>
+   <view class="rightcontent"  style="height:100%;">
+     <block wx:key="id" wx:for="{{menuRightGoods}}">
+        <view>
+           <block wx:for="{{item.xilie}}" wx:for-item="twodata" wx:key="key{{right_index}}">
+               <view>
+               <text bindtap="switchToJg" data-jgname="{{twodata.name}}">{{twodata.name}}</text>
+               </view>
+           </block>
+        </view>
+     </block>
+  </view>
+  </view>
+<!-- </view> -->

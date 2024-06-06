@@ -1,0 +1,24 @@
+<view class="container">
+    <view class="welfare-list">
+        <block wx:for="{{welfareList}}" wx:key="index">
+            <view class="welfare-item">
+                <image class="welfare-img" src="{{item.imageUrl}}" mode="aspectFill"></image>
+                <view class="welfare-info">
+                    <view class="welfare-title">{{item.title}}</view>
+                    <view class="welfare-description">{{item.description}}</view>
+                    <view class="welfare-price">{{item.price}}</view>
+                    <view class="welfare-footer">
+                        <view class="welfare-metadata">
+                            <image class="icon date-icon"></image>
+                            <view class="welfare-date">2024年05月20日</view>
+                        </view>
+                        <view class="welfare-metadata">
+                            <image class="icon views-icon"></image>
+                            <view class="welfare-views">1000次游览</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

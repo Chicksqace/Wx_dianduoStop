@@ -1,0 +1,51 @@
+  <image src="/assets/CS.png" class="cs" mode="scaleToFill">
+    <button class="cs_but" open-type="contact">进入客服会话</button>
+  </image>
+<!--end-->
+<scroll-view style="margin-top:20rpx; position:relative;z-index:9995;"   >
+  <view class='find'>
+      <input class='cn' placeholder="搜索商品" bindblur="search_input_data"></input>
+     <view  bindtap='action_search' >
+        <image style='width:40rpx;height:40rpx;' src='/assets/icon/32px/search.png'></image>
+        </view>
+  </view>
+  <!--<view class='yinying'></view>-->
+  <view class="search_body" style="display:black">
+    <view class="search_body_item">
+      <view class="search_body_item_title">
+          <view class="title_lishi"><text>历史记录</text></view>
+          <view class="title_img" bindtap="deletHis"><image bindtap="" class="del_img" src="/assets/icon/delete.png"></image></view>
+      </view>
+     
+        <view class="search_body_item_title_con">
+          <view bindtap='action_search' data-inputtext="大衣"><text>大衣</text></view>
+          <view bindtap='action_search' data-inputtext="套头毛"><text>套头毛</text></view>
+          <view bindtap='action_search' data-inputtext="大衣"><text>大衣</text></view>
+          <view bindtap='action_search' data-inputtext="大衣"><text>大衣</text></view>
+          <view bindtap='action_search' data-inputtext="棉长裤"><text>棉长裤</text></view>
+          <view bindtap='action_search' data-inputtext="大衣"><text>大衣</text></view>
+          <view bindtap='action_search' data-inputtext="套头毛衣"><text>套头毛衣</text></view>
+        </view>
+      </view>
+
+    <view class="search_body_item">
+      <view class="search_body_item_title"><text>热门搜索</text></view>
+        <view class="search_body_item_title_con">
+          <view bindtap='action_search' data-inputtext="连衣裙"><text>连衣裙</text></view>
+          <view bindtap='action_search' data-inputtext="套头毛衣"><text>套头毛衣</text></view>
+          <view bindtap='action_search' data-inputtext="卫衣卫衣"><text>卫衣卫衣</text></view>
+          <view bindtap='action_search' data-inputtext="卫衣"><text>卫衣</text></view>
+        </view>
+    </view>
+  </view>
+
+  <view class="empty_body" style="dispaly:none">
+    <image class="empty_body_img" src="/assets/illustration/search.png" ></image>
+    <view class="empty_body_text"><text>暂无搜索结果</text></view>
+    <view class="empty_back"><text>回首页</text></view>
+  </view>
+</scroll-view>
+ 
+
+
+

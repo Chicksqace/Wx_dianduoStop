@@ -1,0 +1,74 @@
+<!--客服悬浮-->
+  <image src="/assets/CS.png" class="cs" mode="scaleToFill">
+    <button class="cs_but" open-type="contact">进入客服会话</button>
+  </image>
+<!--end-->
+<scroll-view style="margin-top:20rpx; position:relative;z-index:9995;" >
+  <view class='find'>
+      <input class='cn' value='{{inputtext}}' placeholder="搜索商品" bindblur="search_input_data"></input>
+     <view  bindtap="searchAction">
+        <image style='width:40rpx;height:40rpx;' src='/assets/icon/32px/search.png' ></image>
+        </view>
+  </view>
+  <view class='yinying'></view>
+  <view class="empty_body" id='{{empflag  ? "":"isHidden"}}' >
+    <image class="empty_body_img" src="/assets/illustration/search.png" ></image>
+    <view class="empty_body_text"><text>暂无搜索结果</text></view>
+    <view class="empty_back" bindtap="backHome"><text>回首页</text></view>
+  </view>
+  <view id='{{empflag  ? "isHidden":""}}'>
+   <view class='list'>
+    <view class='item'>
+      <navigator hover-class="none" url="/pages/details/index?id={{item._id}}">
+        <image class='product' src='/images/img/tx.jpg'></image>
+        <text class='text'>羊毛衫.</text>
+      </navigator>
+      <view class='price'>
+        <text style='text-decoration:line-through;'>￥90 </text>
+        <text>￥2000</text>
+        <view class='colorview'> 
+         <view class='color' style='background-color:#000' ></view>
+         <view class='color' style='background-color:#3A4452 ' ></view>
+        <view class='color' style='background-color:#DDD' ></view>
+        
+       </view>
+      </view>
+    </view>
+     <view class='item'>
+      <navigator hover-class="none" url="/pages/details/index?id={{item._id}}">
+        <image class='product' src='/images/img/tx.jpg'></image>
+        <text class='text'>羊毛衫.</text>
+      </navigator>
+      <view class='price'>
+        <text style='text-decoration:line-through;'>￥90 </text>
+        <text>￥2000</text>
+        <view class='colorview'> 
+         <view class='color' style='background-color:#000' ></view>
+         <view class='color' style='background-color:#3A4452 ' ></view>
+        <view class='color' style='background-color:#DDD' ></view>
+        
+       </view>
+      </view>
+    </view>
+     <view class='item'>
+      <navigator hover-class="none" url="/pages/details/index?id={{item._id}}">
+        <image class='product' src='/images/img/tx.jpg'></image>
+        <text class='text'>羊毛衫蓝色条送</text>
+      </navigator>
+      <view class='price'>
+        <text>￥2000</text>
+        <view class='colorview'> 
+         <view class='color' style='background-color:#000' ></view>
+         <view class='color' style='background-color:#3A4452 ' ></view>
+        <view class='color' style='background-color:#DDD' ></view>
+        
+       </view>
+      </view>
+    </view>
+  </view>
+  </view>
+</scroll-view>
+ 
+
+
+

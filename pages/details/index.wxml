@@ -1,0 +1,171 @@
+<!--客服悬浮-->
+  <image src="/assets/CS.png" style=" width:64px;height:64px;position: fixed;bottom: 374rpx;right: 30rpx;z-index: 99998;" mode="scaleToFill">
+    <button style="width:64px;height:64px;position: fixed;bottom: 374rpx;right: 30rpx;z-index: 99999;opacity:0;" open-type="contact">进入客服会话</button>
+  </image>
+<!--end-->
+<view style='height:100vh;'>
+<scroll-view scroll-y style='height:92vh'>
+  <swiper 
+      autoplay="{{autoplay}}" 
+      interval="{{interval}}" 
+      duration="{{duration}}"
+      current="{{currentTab}}"
+       bindchange="bindChange"
+      >
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src='{{item}}'  mode="aspectFill"/>
+          </swiper-item>
+        </block>
+       
+  </swiper>
+   <view class="swnum"><text>{{currentTab+1}}/{{imgUrls.length}}</text></view>
+  <view class='title'>
+    毛线衣服
+    <view class='spec'>
+    ￥300
+    </view>
+  </view>
+ 
+ 
+   <view class='xuanze'>
+      <picker  bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class='xuanzeyanse'style='margin-left:-15rpx;'>
+    
+      <view style="margin-left:15rpx">
+      
+      <text class='color' style='background-color:{{arraycolor[index]}};color:{{arraycolor[index]}};'>口.</text>
+      <text>{{array[index]}}</text>
+      </view>
+      <view  style="margin-right:15rpx">
+       <image style='width:27rpx; height:16rpx;' src='/images/img/morec.png'></image>
+      </view>
+     
+    </view>
+   </picker>
+    <picker  bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+   <view class='xuanzeyanse' style='margin-left:30rpx;'>
+      <view style="margin-left:15rpx">
+    
+      <text>{{array1[index1]}}</text>
+      </view>
+      <view style="margin-right:15rpx">
+       <image style='width:27rpx; height:16rpx;' src='/images/img/morec.png'></image>
+      </view>
+    </view>
+  </picker>  
+   </view>
+    <view class='freight'>
+
+    <view class='text' bindtap="article4">
+   
+        <view class='label' style='padding-left:16px;'>
+         
+          <image  src='/images/img/question-circle.png'></image>
+        </view>
+        <text style='padding-left:5px;'>尺码指南</text>
+     
+      </view>
+
+  
+   </view> 
+  <!-->
+  <view class='choice' bindtap='specFun'>
+      规格：请选择蛋糕规格
+   </view>
+   -->
+   <view class='tab'>
+    <view class='left' bindtap="tabFun" data-state="{{1}}">
+      <text class='{{tabIs1?"tab-acitve":""}}'>描述</text>
+    </view>
+    <view class='right' bindtap="tabFun" data-state="{{2}}">
+      <text class='{{tabIs2?"tab-acitve":""}}'>支付与配送</text>
+    </view>
+    <view class='center' bindtap="tabFun" data-state="{{3}}">
+      <text class='{{tabIs3?"tab-acitve":""}}'>细节</text>
+    </view>
+   </view>
+   <view class='content' wx:if="{{tabIs1}}">
+       <view class="duanluo">
+        <view> <text class='biaot'>材质说明1</text></view>
+         <view> <text class='xiangqing'>材质说明材质说明材质说明材质说明材质说明材质说明材质说明</text>          </view>
+         <view> <text class='biaot'>材质说明1</text></view>
+         <view> <text class='xiangqing'>材质说明材质说明材质说明材质说明材质说明材质说明材质说明</text>          </view>
+          <view>  <image src="/images/img/chima.jpg" mode="widthFix"></image></view>
+         <view> <text class='biaot'>材质说明1</text></view>
+         <view> <text class='xiangqing'>材质说明材质说明材质说明材质说明材质说明材质说明材质说明</text>          </view><view> <text class='biaot'>材质说明1</text></view>
+         <view> <text class='xiangqing'>材质说明材质说明材质说明材质说明材质说明材质说明材质说明</text>          </view>
+         <view> <text class='biaot'>材质说明1</text></view>
+         <view> <text class='xiangqing'>材质说明材质说明材质说明材质说明材质说明材质说明材质说明</text>          </view>
+       </view>
+      </view>
+   <view class='content' wx:if="{{tabIs2}}">
+    <view class="duanluo">
+        <view> <text class='biaot'>材质说明2</text></view>
+         <view> <text class='xiangqing'>材质说明材质说明材质说明材质说明材质说明材质说明材质说明</text>          </view>
+       </view>
+      </view>
+    <view class='content' wx:if="{{tabIs3}}">
+     <view class="duanluo">
+        <view> <text class='biaot'>材质说明1</text></view>
+         <view> <text class='xiangqing'>材质说明材质说明材质说明材质说明材质说明材质说明材质说明</text>          </view>
+       </view>
+      </view>
+</scroll-view>
+<view class='bottom'>
+<view class='icon' bindtap='goShopCar'>
+  <view>
+    <image src='/images/img/shoppingbag.png' style='width:24px;height:24px;'></image>
+    <view class="jiaobiao"><text style="background-color:#E38627;font-color:#FFF;">2</text></view>
+   </view>
+</view>
+ <!-- bindtap='specFun' -->
+<view class='btn' bindtap='addCart'>
+  加入购物车
+</view>
+
+</view>
+<view class='popup' wx:if="{{specIs}}">
+    <view class='title'>
+      <view class='img'>
+        <image src=''></image>
+      </view>
+      <view class='text'>
+        <text>热卖款：四重奏蛋糕2磅/3磅/4磅...</text>
+        <view>￥180.00</view>
+      </view>
+      <view class='icon' bindtap='specFun'>
+        <image src="/images/img/delete.png"></image>
+      </view>
+    </view>
+  <scroll-view scroll-y class='content'>
+      <view class='item'>
+        <text style='padding-top:10px;'>款式:</text>
+        <view class='list'>
+          <view class='active'>奥术大师多</view>
+          <view>奥术大师多</view>
+          <view>奥术大师多</view>
+          <view>奥术大师多</view>
+        </view>
+      </view>
+      <view class='item'>
+        <text>搭配套餐:</text>
+        <view class='list'>
+          <view>奥术大师多asdasdasd</view>
+          <view>奥术大师多asdasd</view>
+          <view>奥术大师多</view>
+          <view>奥术大师多asdasdasdddddddd</view>
+          <view>奥术大师多asdasdasd</view>
+          <view>奥术大师多asdasd</view>
+          <view>奥术大师多</view>
+          <view>奥术大师多asdasdasdddddddd</view>
+        </view>
+      </view>
+  </scroll-view>
+  <view class='btn' bindtap='specFun'>
+  下一步
+  </view>
+</view>
+</view>
+
+

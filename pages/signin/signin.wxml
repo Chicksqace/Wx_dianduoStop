@@ -1,0 +1,13 @@
+<!-- pages/index/index.wxml -->
+<view class="container">
+    <view class="sign-in-container">
+        <view class="sign-in-title">签到领积分</view>
+        <view class="sign-in-button" bindtap="handleSignIn">立即签到</view>
+        <view class="last-sign-in">上次签到：{{lastSignInDate}}</view>
+        <view class="sign-in-reward">签到奖励：+{{signInReward}}积分</view>
+    </view>
+    <view class="sign-in-history">
+        <view class="history-title">签到历史</view>
+        <view class="history-item" wx:for="{{signInHistory}}" wx:key="index">{{item}}</view>
+    </view>
+</view>

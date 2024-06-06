@@ -1,0 +1,15 @@
+/* template/enterprise.wxss */
+.enterprise{
+    margin: 30rpx 0rpx;
+}
+.enterprise .enterprise_item{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #1afa29;
+    margin-bottom: 10rpx;
+    padding: 10rpx;
+}
+.enterprise .enterprise_item image{
+    width: 90rpx;
+    height: 90rpx;
+}

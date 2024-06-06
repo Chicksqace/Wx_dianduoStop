@@ -1,0 +1,60 @@
+<!--pages/index/index.wxml-->
+<view class=" bg continer">
+    <view class="swiper">
+        <swiper indicator-dots
+        autoplay interval="1000" >
+    <swiper-item wx:for="{{slide_img}}" wx:key="index" wx:if="{{item.slide_img !== null}}">
+    <image class="slide-image" src="{{item.img}}"  style="width: 1000px;" />
+</swiper-item>
+    </swiper>
+    </view>
+    <view class="hr"></view>
+   <!-- 图标区域 -->
+   <view class="category">
+        <view class="category_item" wx:for="{{iconArray}}" wx:key="index" bindtap="handleIconClick" data-url="{{item.url}}">
+            <view class="category_item_wrap">
+                <view class="icon_wrap">
+                    <image src="{{item.iconUrl}}" class="index_icon"></image>
+                </view>
+                <view class="category_item_text">
+                    <text>{{item.iconText}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+<view class="hr"></view>
+<!-- 内容区域 -->
+<view>
+  <view class="singal_item" wx:for="{{itemArray}}" wx:key="index">
+    <view class="singal_item_title">
+      <text>{{item.description}}</text>
+    </view>
+    <view class="singal_item_image">
+      <image bindload="cusImageLoad" src="{{item.image}}" style="width: {{imageWidth}};height: {{imageHeight}}"></image>
+    </view>
+  </view>
+</view>
+<view class="hr"></view>
+<!-- <text class="h1">新人专享</text>
+    <view class="enterprise">
+        <view class="enterprise_item" wx:for="{{slide_img}}" wx:key="index" >
+            <image src="{{item.company_img}}" />
+            <view class="right">
+                <view class="title">
+                {{item.company_title}}
+            </view>
+
+            <view class="title num">
+                {{index+1}}
+            </view>
+            <view class="title top">
+                top 
+            </view>
+            <view class="content js">
+                {{item.company_description}}
+            </view>
+            </view>
+    </view>
+</view> -->
+    
+</view>

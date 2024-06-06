@@ -1,0 +1,140 @@
+page{
+  height: 100%;
+
+  z-index: 9999999;
+}
+.container {
+    height: 100%;
+    z-index: 9999999;
+}
+
+.yinying {
+    width: 100%;
+    height: 10rpx;
+    background-color: #F6F6F6;
+    position: fixed;
+    z-index: 99999;
+}
+
+.body {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    overflow: hidden;
+   
+}
+
+.active view {
+    background-color: #E38627;
+}
+
+.leftmenu {
+    top: 200rpx;
+    width: 200rpx;
+    z-index: 9995;
+    padding-top: 10rpx;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    overflow: auto;
+    box-shadow: inset -1px 0 0 0 rgba(150,150,150,0.50);
+}
+
+.leftmenu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftmenu ul li {
+    display: flex;
+    justify-content: center;
+    height: 120rpx;
+    align-items: center;
+}
+
+.leftmenu ul li view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.leftmenu ul li view text {
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #969696;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.leftmenu ul li view view {
+    width: 26rpx;
+    height: 6rpx;
+}
+
+.rightcontent {
+    z-index: 9995;
+    position: absolute;
+    left: 200rpx;
+    padding-top: 20rpx;
+    background-color: #FFFFFF;
+    width: 546rpx;
+}
+
+.rightcontent view {
+    width: 100%;
+    padding: 20rpx;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rightcontent view view {
+    width: 110rpx;
+    height: 110rpx;
+    margin: 10rpx;
+    background-color: #F6F6F6;
+}
+
+.rightcontent view view text {
+    width: 100%;
+    font-family: PingFangSC-Regular;
+    font-size: 27rpx;
+    color: #969696;
+    letter-spacing: 0;
+    text-align: center;
+    overflow-wrap: break-word;
+    margin-top: 20rpx;
+}
+
+.find {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 93%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+    padding-bottom: 10px;
+}
+
+.find input {
+    flex: 1;
+    font-size: 28rpx;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.find image {
+    display: block;
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.yinying {
+    margin-top: 15px;
+    width: 100%;
+    height: 12px;
+    background-color: #B0B2BF;
+    opacity: 0.15;
+}

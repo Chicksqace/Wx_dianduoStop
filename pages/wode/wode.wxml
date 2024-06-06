@@ -1,0 +1,109 @@
+<scroll-view scroll-y style='height:100vh; background:#F6F6F6;'>
+  <view class='top'>
+    <view class="username">
+      <view class='text'>
+        <view class="usnn"><open-data  type="userNickName"></open-data></view>
+     <view style="position:relative;" class='huiy'>
+      
+        <image style="width:87px; height:18px; position:absolute; left:0; top:0;" src="/images/img/vip-bg.png" >
+         <view class="bgcontent" style="position:absolute;  left:22px; top:-3px;"><text style="font-size:12px;">lv1会员</text></view>
+        </image>
+    
+     </view>
+     
+      </view>
+       <view class='img'>
+         <open-data type="userAvatarUrl"></open-data>
+      </view>
+      
+    </view>
+   
+  </view>
+  <view style="width:100%; height:150rpx; background:#FFF;">
+   <view style='width:678rpx; position:relative;margin: 0 auto;'> 
+      <image style="width:678rpx; height:140rpx; position:absolute; left:0; top:0;" src="/images/img/bg.png" ></image>
+     <view style="width:678rpx; height:140rpx;position:absolute; left:0; top:0;" class='huiybg'>
+         <view class='Rh'>
+           <view>点多尊享会员计划</view>
+           <view style='font-size:20rpx;opacity:0.5;'>享优惠券、专属客服等多重好礼</view>
+         </view>
+         <view bindtap='userAdd' class="texth" style='font-size:26rpx;color:#969696;'>会员权益</view>
+     </view>
+    </view>
+  </view>
+  <navigator url="/pages/order/index" class='item'>
+    <view class='left'>
+      我的订单
+    </view>
+    <view class='right'>
+      <text>全部</text>
+      <image src='/images/img/my_order.png'></image>
+    </view>
+  </navigator>
+  <view class='icon'>
+    <navigator url="/pages/orderDetails/index?type=1" hover-class="none" >
+      <image src='/images/img/unpaid.png' mode="aspectFit"></image>
+      <text>待付款</text>
+    </navigator>
+    <navigator url="/pages/orderDetails/index?type=2" hover-class="none" >
+      <image src='/images/img/undeliveried.png' mode="aspectFit"></image>
+      <text>待发货</text>
+    </navigator>
+    <navigator url="/pages/orderDetails/index?type=3" hover-class="none" >
+      <image src='/images/img/delivery.png' mode="aspectFit"></image>
+      <text>待收货</text>
+    </navigator>
+    <navigator url="/pages/orderDetails/index?type=4" hover-class="none" >
+      <image src='/images/img/aftersale.png' mode="aspectFit"></image>
+      <text>售后</text>
+    </navigator>
+  </view>
+   <navigator url="/pages/order/index" class='item'>
+    <view class='left'>
+     其他
+    </view>
+    <view class='right'>
+      
+      
+    </view>
+  </navigator>
+  <view class='icon'>
+    <navigator url="/pages/signin/signin" hover-class="none" >
+      <image src='/images/img/签到.png' mode="aspectFit"></image>
+      <text>签到</text>
+    </navigator>
+    <navigator url="/pages/coupon/index" hover-class="none" >
+      <image src='/images/img/coupon.png' mode="aspectFit"></image>
+      <text>我的优惠</text>
+    </navigator>
+    <navigator url="/pages/addressList/index" hover-class="none" >
+      <image src='/images/img/address.png' mode="aspectFit"></image>
+      <text>地址管理</text>
+    </navigator>
+    <navigator url="/pages/applyTuihuo/applyTuihuo" hover-class="none" >
+      <image src='/images/img/refund.png' mode="aspectFit"></image>
+      <text>退货退款</text>
+    </navigator>
+    <navigator url="/pages/delivery/index" hover-class="none" >
+      <image src='/images/img/delivery-method.png' mode="aspectFit"></image>
+      <text>配送方式</text>
+    </navigator>
+   
+  </view>
+  <view class='icon'>
+    <navigator url="/pages/contactUs/index" hover-class="none" >
+      <image src='/images/img/contact.png' mode="aspectFit"></image>
+      <text>联系我们</text>
+    </navigator>
+    <navigator url="/pages/privacy/index" hover-class="none" >
+      <image src='/images/img/policy.png' mode="aspectFit"></image>
+      <text>隐私政策</text>
+    </navigator>
+   
+  </view>
+ 
+   
+  
+  
+ 
+</scroll-view>

@@ -1,0 +1,135 @@
+.username{
+  display:flex;
+  flex: 0 1 87%;
+  justify-content: space-between;
+
+ 
+}
+.huiy text {
+ font-size: 54rpx;color: #000;z-index: 99999;
+
+}
+.usnn{
+  height: 30px;
+  line-height: 30px;
+  width: 88px;
+  text-align: left;
+  font-size: 18px;
+}
+.username .text{
+ 
+  padding-bottom: 15px;
+  
+  
+}
+.username view{
+  
+}
+.huiy{
+
+}
+.top{
+ height: 16vh;
+
+ background: #fff;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.top .img{
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.top .text{
+  text-align: center;
+  font-size: 14px;
+  color: #333333;
+}
+.item{
+  display: flex;
+  line-height: 40px;
+  
+  background: #fff;
+  padding: 0 16px;
+  margin-top: 10px;
+}
+
+.item .left{
+  flex: 1 0 50%;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 700;
+}
+
+.item .right{
+   font-size: 12px;
+  flex: 1 0 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.item image{
+  width: 8px;
+  height: 15px;
+}
+
+.item text{
+  font-size: 14px;
+  color: #999999;
+  padding-right: 10px;
+}
+
+.icon{
+  
+  display: flex;
+  padding: 12px 0;
+  background-color: #FFF;
+}
+.icon image{
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.icon text{
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  color: #333;
+  padding-top: 0px;
+}
+.icon navigator{
+  flex: 0 0 25%;
+  
+}
+.huiybg{
+  width: 678rpx;
+   height: 140rpx;
+    margin: 0 auto;
+
+}
+.huiybg view{
+  display: block;
+  font-size: 32rpx;
+  color: #FFF;
+  height:50rpx;
+padding-top:10rpx;
+padding-left:10rpx;
+
+}
+.texth{text-align:center;
+width:144rpx;
+height:64rpx;
+float:right;
+margin-top:-25rpx;
+background:rgb(138, 255, 138);
+color:#FFF;
+font-size:20rpx;
+margin-right: 20rpx;
+}

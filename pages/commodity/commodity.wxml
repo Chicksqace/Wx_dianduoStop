@@ -1,0 +1,73 @@
+<view class="active_block">
+    <view class="active_item_title">
+        <view class="active_title_wrap">
+            <view class="active_title">每日折扣</view>
+        </view>
+    </view>
+    <view class="xq" style="{{ho}}">
+        <view class="xq_content">
+            <view class="c">折扣劵须知</view>
+            <view class="gb" bindtap="close">×</view>
+            <view class="rule_text">
+                折扣劵使用规则：
+                <br/>1、使用期限：请在折扣券上注明的有效期内使用，逾期无效。
+                <br/>2、使用范围：折扣券仅限指定门店或线上商城使用，具体使用范围以折扣券上标注为准。
+                <br/>3、使用条件：折扣券需满足一定消费金额后方可使用，具体金额以折扣券上标注为准。
+                <br/>4、使用方式：在结账时，请向收银员出示有效的折扣券，我们将为您进行相应的折扣优惠。
+                <br/>5、不可叠加：每张订单仅限使用一张折扣券，不可与其他优惠活动叠加使用。
+                <br/>6、退换货：如使用折扣券后发生退换货，需先退回折扣券所享受的优惠金额，再按照实际支付金额进行退换货处理。
+                <br/>7、如有疑问，请咨询指定商家或相关服务机构。
+            </view>
+        </view>
+    </view>
+    <view class="zx" bindtap="open">?</view>
+    <view class="active_item">
+        <view>
+            <image bindload="cusImageLoad" src="../../images/sp/lm.jpg" class="item_image" bindtap="go"></image>
+        </view>
+        <view class="active_goods_name">纯天然无公害蓝莓酥</view>
+        <view class="active_item_infor">
+            <text class="active_new_price">¥95</text>
+            <text class="active_old_price">¥190</text>
+            <text bindtap='countdown' class="active_time">剩余: {{clock}}</text>
+        </view>
+    </view>
+    <view class="active_item">
+        <view>
+            <image bindload="cusImageLoad" src="../../images/sp/R-Q.jpg" class="item_image"></image>
+        </view>
+        <view class="active_goods_name">汪汪牌空气清新剂</view>
+        <view class="active_item_infor">
+            <text class="active_new_price">¥95</text>
+            <text class="active_old_price">¥190</text>
+            <text bindtap='countdown' class="active_time">剩余: {{clock}}</text>
+        </view>
+    </view>
+</view>
+<view>
+    <view class="active_item_title">
+        <view class="active_title_wrap">
+            <view class="active_title">参加团购</view>
+        </view>
+    </view>
+    <view class="active_item">
+        <view>
+            <image bindload="cusImageLoad" src="../../images/sp/cc3.jpg" class="item_image"></image>
+        </view>
+        <view class="active_goods_name">太阳能充电器</view>
+        <view class="active_item_infor">
+            <text class="active_group_price">团购价¥90</text>
+            <text class="active_time">三人团</text>
+        </view>
+    </view>
+    <view class="active_item">
+        <view>
+            <image bindload="cusImageLoad" src="../../images/sp/bei.jpg" class="item_image"></image>
+        </view>
+        <view class="active_goods_name">高端环保玻璃杯</view>
+        <view class="active_item_infor">
+            <text class="active_group_price">团购价¥80</text>
+            <text class="active_time">四人团</text>
+        </view>
+    </view>
+</view>

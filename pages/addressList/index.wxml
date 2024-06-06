@@ -1,0 +1,39 @@
+<!--客服悬浮-->
+  <image src="/assets/CS.png" style=" width:64px;height:64px;position: fixed;bottom: 374rpx;right: 30rpx;z-index: 99998;" mode="scaleToFill">
+    <button style="width:64px;height:64px;position: fixed;bottom: 374rpx;right: 30rpx;z-index: 99999;opacity:0;" open-type="contact">进入客服会话</button>
+  </image>
+<!--end-->
+
+<view >
+<scroll-view scroll-y style='height:90vh; background:#F6F6F6;'>
+ 
+  <view class='list' wx:for="{{adress_list}}">
+    <view class='item'>
+       <view class='choice'  bindtap="labelFun" data-index="{{index}}" data-id="{{item.id}}">
+       
+        <image wx:if="{{item.select}}" src='/images/img/radio-y1.png'></image>
+        <image wx:else src='/images/img/radio-n1.png'></image>
+      </view>
+      
+      <view class='left'>
+        <view class="xingm">陈先生 17777777777</view>
+        <view  class="dizhi">浙江省杭州浙江XXXXXX大学</view>
+     <view style="display:flex; font-size:20px; margin-top:15px;">
+          <navigator  hover-class="none" url="/pages/addressAdd/index?city={{item.city[0]}},{{item.city[1]}},{{item.city[2]}}&mobile={{item.mobile}}&name={{item.name}}&detailed={{item.detailed}}&id={{item._id}}"  >
+      编辑
+         </navigator>
+      
+         <text style="margin-left:20px; color:#9D3737; ">删除</text>
+         </view>
+      </view>
+     
+    </view>
+  </view>
+  
+  
+
+</scroll-view>
+<navigator url="/pages/addressAdd/index" class='btn'>
+ 新增收货地址
+</navigator>
+</view>

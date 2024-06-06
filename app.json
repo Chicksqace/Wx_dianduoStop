@@ -1,0 +1,75 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/commodity/commodity",
+    "pages/sq/sq",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/reg/reg",
+    "pages/test/test",
+    "pages/start/start",
+    "pages/wode/wode",
+    "pages/xiaoxi/xiaoxi",
+    "pages/goshop/goshop",
+    "pages/spdetail/spdetail",
+    "pages/pay/pay",
+    "pages/pay1/pay1",
+    "pages/sqs/sqs",
+    "pages/signin/signin",
+    "pages/nearby/nearby",
+    "pages/guide/guide",
+    "pages/welfare/welfare",
+    "pages/play/play",
+    "pages/surroundings/surroundings",
+    "pages/freeShipping/freeShipping",
+    "pages/groupBuy/groupBuy",
+    "pages/applyTuihuo/applyTuihuo",
+    "pages/feilei/feilei",
+    "pages/fljg/fljg",
+    "pages/search/search",
+    "pages/searchResult/searchResult",
+    "pages/details/index",
+    "pages/order/index",
+    "pages/orderDetails/index",
+    "pages/coupon/index",
+    "pages/couponold/index",
+    "pages/addressList/index",
+    "pages/addressAdd/index",
+    "pages/userAdd/index",
+    "pages/delivery/index",
+    "pages/contactUs/index",
+    "pages/privacy/index"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0b9114",
+    "navigationBarTitleText": "点多商店",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+      "list": [{
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath": "/images/icon/shouye.png",
+          "selectedIconPath": "/images/icon/shouye_active.png"
+      },{
+        "pagePath": "pages/commodity/commodity",
+        "text": "购物中心",
+        "iconPath": "/images/icon/gouwuche.png",
+        "selectedIconPath": "/images/icon/gouwuche_active.png"
+    },{
+        "pagePath": "pages/sqs/sqs",
+        "text": "社区",
+        "iconPath": "/images/icon/shequ.png",
+        "selectedIconPath": "/images/icon/shequ_active.png"
+    },{
+      "pagePath": "pages/wode/wode",
+      "text": "我的",
+      "iconPath": "/images/icon/wode.png",
+      "selectedIconPath": "/images/icon/wode_active.png"
+  }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

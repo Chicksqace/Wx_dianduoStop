@@ -1,0 +1,39 @@
+<!--pages/login/login.wxml-->
+<!--pages/swiperDome/swiperDome.wxml-->
+<view class="back">
+<image src="../../images/注册.png" style="position: absolute;" mode="widthFix"/>
+<view class="content">
+  <view class="logo">
+        <p>注册</p>
+  </view>
+  <view class="hr"></view>
+
+    <!-- 账号 -->
+      <view class="accounta">
+          <view class="title">手机号</view>
+          <input class="info" placeholder="用户名/邮箱/密码" placeholder-style="color:#ccc" bindinput="accountInput"/>
+      </view>
+      <view class="hr"></view>
+      <view class="accountb">
+          <view class="title">昵称</view>
+          <input class="info" placeholder="用户名/邮箱/密码" placeholder-style="color:#ccc" />
+      </view>
+      <view class="hr"></view>
+      <!-- 密码 -->
+      <view class="accountb">
+          <view class="title">密码</view>
+          <input class="info" placeholder="请输入密码" password="{{isEncrypt}}" placeholder-style="color:#ccc"  bindinput="firstPwd"/>
+          <view class="see" bindtap="isEncrypt">
+          </view>
+      </view>
+      <view class="accountb">
+          <view class="title">确认密码</view>
+          <input class="info" placeholder="请输入密码" password="{{isEncrypt}}" placeholder-style="color:#ccc" bindinput="lastPwd"/>
+          <view class="see" bindtap="isEncrypt">
+          </view>
+      </view>
+      <view class="hr"></view>
+      <button class="loginb" formTpye="submit" type="mytype" bindtap="login">注册</button>
+
+</view>
+</view>

@@ -1,0 +1,45 @@
+<view class="wrapper">
+
+<view class="header">
+  <text class="header-title"> 大转盘抽奖 </text>
+  <text class="header-subtitle">  每日活动大抽奖，反馈广大客户 </text> 
+</view>
+
+<view class="main">
+  <view class="canvas-container">
+    <view  animation="{{animationData}}" class="canvas-content" >
+      <canvas style="width: 300px; height: 300px;" class="canvas-element" canvas-id="lotteryCanvas"></canvas>
+
+      <view class="canvas-line">
+        <view class="canvas-litem" wx:for="{{awardsList}}" wx:key="unique" style="-webkit-transform: rotate({{item.lineTurn}});transform: rotate({{item.lineTurn}})"></view>
+      </view>
+
+      <view class="canvas-list">
+        <view class="canvas-item" wx:for="{{awardsList}}" wx:key="unique">
+            <view class="canvas-item-text" style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}})">{{item.award}}</view>
+        </view>
+      </view>
+
+      
+    </view>
+
+    <view bindtap="getLottery" class="canvas-btn {{btnDisabled}}">抽奖</view>		
+  </view>
+
+  <view class="main-container">
+    <view class="main-container-btn">
+      <button bindtap="gotoList" type="primary">查看中奖</button>	
+    </view>
+    <view class="main-container-rule">
+      <text class="main-rule-title">活动规则：</text>
+      <text class="main-rule-item">1. 所有在活动现场的顾客或线上平台的注册用户均可参与。</text>
+      <text class="main-rule-item">2. 每个参与者每天有1次免费抽奖机会。</text>	
+      <text class="main-rule-item">3. 可通过完成特定任务（如分享活动至社交媒体、邀请好友参与等）获得额外抽奖机会。</text>	
+      <text class="main-rule-item">4. 顾客或用户通过转动大转盘进行抽奖。</text>	
+      <text class="main-rule-item">5. 每次转动后，指针所指即为所中奖项。</text>	
+    </view>	
+  </view>
+
+</view>
+
+</view>

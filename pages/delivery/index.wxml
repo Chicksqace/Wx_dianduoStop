@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="header">
+    <text class="title">选择配送方式</text>
+  </view>
+  
+  <view class="delivery-option" wx:for="{{deliveryOptions}}" wx:key="id">
+    <radio-group class="option-group" bindchange="onOptionChange">
+      <label class="option-label">
+        <radio value="{{item.id}}" checked="{{item.checked}}">{{item.name}}</radio>
+      </label>
+      <view class="option-details">
+        <text>费用: {{item.cost}}</text>
+        <text>预计时间: {{item.time}}</text>
+      </view>
+    </radio-group>
+  </view>
+  
+  <button class="confirm-button" bindtap="onConfirm">确认选择</button>
+</view>

@@ -1,0 +1,280 @@
+/**index.wxss**/
+.container{
+  width: 100%;
+  height: 115%;
+}
+swiper{
+  width: 100%;
+  height: 220px;
+}
+.img{
+  border-top: 1px solid #EDEDED;
+  border-bottom: 1px solid #EDEDED;
+}
+.img image{
+  display: block;
+  border-bottom: 1px solid #EDEDED;
+}
+.title{
+  padding: 10px 0;
+}
+
+.title text{
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #333;
+}
+
+.title .cn{
+  font-size: 16px;
+}
+.title .en{
+  font-size: 12px;
+}
+
+.icon{
+  border-top:2px solid #EDEDED; 
+  border-bottom:2px solid #EDEDED; 
+  display: flex;
+  padding: 12px 0;
+}
+.icon image{
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.icon text{
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+  padding-top: 10px;
+}
+.icon navigator{
+  flex: 1 0 25%;
+}
+
+.cs{
+  width:126rpx;height:126rpx;position: fixed;bottom: 374rpx;right: 30rpx;z-index: 99998;
+}
+.cs_but{
+  width:126rpx;height:126rpx;position: fixed;bottom: 374rpx;right: 30rpx;z-index: 99999;
+  opacity:0;
+}
+
+.yinying{
+   margin-top: 30rpx;
+  width: 100%;
+  height: 16rpx;
+  background-color: #B0B2BF;
+  opacity: 0.15;
+}
+.tiaojian{
+  width: 100%;height: 86rpx;display: flex;flex-direction: row;
+}
+.pailie{
+  width: 496rpx;margin: 36rpx;display: flex;flex-direction: row
+}
+.saixuan{
+  margin:36rpx;display: flex;flex-direction: row
+}
+.pailie text {
+  font-family: PingFangSC-Regular;font-size: 30rpx;color: #969696;letter-spacing: 0;
+text-align: center;
+}
+.pailie image {
+  width: 27rpx;height: 16rpx;margin: 12rpx;
+}
+.saixuan text {
+  font-family: PingFangSC-Regular;font-size: 30rpx;color: #969696;letter-spacing: 0;
+text-align: center;
+}
+.saixuan image {width: 26rpx;height: 27rpx;margin: 7.5rpx 12rpx 7.5rpx 12rpx}
+.topmeun{
+  width: 678rpx;
+  margin: 50rpx 36rpx 45rpx 36rpx;
+  height: 56rpx;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+}
+.topmeun_v {
+  margin-right: 28rpx;
+  height: 56rpx;
+  width: auto;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+.topmeun_ts{
+  width: 16px;
+  height: 3px;
+}
+#active{
+  color: #000;
+  font-size: 15px;
+}
+.topmeun view text {
+  font-family: PingFangSC-Regular;font-size:15px;color: #969696 ;letter-spacing: 0;
+text-align: center;height:26px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis
+}
+#active view {
+  background-color: #E38627;
+}
+
+.list{
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap:wrap;
+  box-sizing: content-box;
+}
+.list .item{
+  flex:0 1 50%;
+  /* border-bottom:1px solid #EDEDED;  */
+  padding-top: 15px;
+}
+.list .item:nth-child(odd){
+  /* border-right:1px solid #EDEDED;  */
+  margin-right: -1px;
+}
+
+.list .item .text{
+  display: block;
+  font-size: 32rpx;
+  line-height: 90rpx;
+  margin:0 12px;
+  color:#969696 ;
+}
+
+.list .item .product{
+  display: block;
+  width: 335rpx;
+  height: 480rpx;
+  margin: 0 auto;
+}
+.price{
+  display: flex;
+  margin:0 10px;
+  justify-content:space-between;
+}
+
+.price text{
+  font-size: 36rpx;
+  color: #000;
+}
+
+.price image{
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding-top: 2px;
+}
+
+.color{
+ display: block;
+ float: right;
+  width: 30rpx; height:30rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+  border: 1px #000 solid;
+  
+
+}
+.find{
+  display: flex;
+  margin:0 10px;
+  justify-content:space-between;
+  width: 93%;
+  margin: 0 auto;
+  border-bottom:1px solid rgba(0, 0, 0, 0.082); 
+ padding-bottom: 10px;
+}
+
+.find text{
+  font-size: 28rpx;
+  color: #969696;
+}
+
+.find image{
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding-top: 2px;
+}
+
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 9999;
+  color: #fff;
+}
+/*对话框 */
+.commodity_attr_box {
+  height: 1200rpx;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99998;
+  background: #fff;
+  padding-top: 20rpx;
+}
+.jianbian{
+  font-size: 74rpx;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  background-clip: text;
+  overflow: hidden;white-space: nowrap;text-overflow: ellipsis
+}
+.top_1{
+  width: 750rpx;height: 85rpx;display: flex;flex-direction: row
+}
+.top_1 view text{
+  font-family: PingFangSC-Regular;font-size: 34rpx;color: #000000;line-height: 34rpx;
+}
+.top_cz{
+  margin-left: 36rpx;height: 34rpx;margin-top: 12rpx
+}
+.top_sx{
+  margin:0 auto;height: 34rpx;margin-top: 12rpx
+}
+.top_qr{
+  margin-right: 36rpx;height: 34rpx;margin-top: 12rpx
+}
+.tanchuang_body {
+  width: 712rpx;display: flex;flex-direction: column;height: 1080rpx;
+  margin-left: 36rpx;overflow: auto;background-color: #FFF;
+}
+.tanchuang_item {
+  width: 100%;background-color: #FFFFFF;
+}
+.tanchuang_itemtitle {
+  width: auto;height: 34rpx;margin-top: 40rpx;margin-bottom: 16rpx
+}
+.tanchuang_itemtitle text {
+  font-family: PingFangSC-Regular;font-size: 34rpx;color: #000000;line-height: 34rpx;
+}
+.tanchuang_itemcon {width: 100%;display: flex;flex:1;flex-wrap: wrap;}
+.tanchuang_itemcon view {width: 152rpx;height: 57rpx; border: 1rpx solid #969696;margin: 16rpx 24rpx 16rpx 0;flex:none;display:flex;align-items:center;justify-content:center;
+ }
+.tanchuang_itemcon view text {font-family: PingFangSC-Regular;font-size: 24rpx;letter-spacing: 0;text-align: center;display:flex;align-items:center;overflow-wrap: break-word;justify-content:center;}
+#chicun{width: 210rpx;height: 57rpx}
+.saixuan_active{background-color: #000000}
+.saixuan_textactive{color: #ffffff}
+.saixuan_textnoactive{color: #969696;}
+::-webkit-scrollbar { 
+	width: 0; 
+	height: 0; 
+	color: transparent; 
+}

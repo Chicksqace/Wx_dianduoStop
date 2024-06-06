@@ -1,0 +1,182 @@
+<!--客服悬浮-->
+<image src="/assets/CS.png" style=" width:64px;height:64px;position: fixed;bottom: 374rpx;right: 30rpx;z-index: 99998;" mode="scaleToFill">
+  <button style="width:64px;height:64px;position: fixed;bottom: 374rpx;right: 30rpx;z-index: 99999;opacity:0;" open-type="contact">进入客服会话</button>
+</image>
+<!--end-->
+
+
+<view class='main'>
+  <scroll-view scroll-y class='list'>
+    <view style="margin-bottom:10px; background:#f6f6f6;">
+      <!--循环-->
+      <view class='leandr'>
+        <view class='left'>
+          <view  wx:if="{{tabIndex == 1}}" style="font-size: 17px;color: #000000;">待付款</view>
+          <view  wx:if="{{tabIndex == 2}}" style="font-size: 17px;color: #000000;">待发货</view>
+          <view  wx:if="{{tabIndex == 3}}" style="font-size: 17px;color: #000000;">待收货</view>
+          <view  wx:if="{{tabIndex == 4}}" style="font-size: 17px;color: #000000;">已完成</view>
+         
+          
+          <view  wx:if="{{tabIndex == 1}}">请尽快完成支付，超时将自动关闭</view>
+          <view  wx:if="{{tabIndex == 2}}">商品将尽快发出</view>
+          <view  wx:if="{{tabIndex == 3}}">查看物流跟踪商品物流信息</view>
+          <view  wx:if="{{tabIndex == 4}}">感谢您的购买</view>
+
+        </view>
+        <view class='right'>
+          <image  wx:if="{{tabIndex == 1}}" style="width:74px; height:74px; " src="/images/img/purse.png"></image>
+          <image  wx:if="{{tabIndex == 2}}" style="width:74px; height:74px; " src="/assets/order/icon/box.png"></image>
+          <image  wx:if="{{tabIndex == 3}}" style="width:74px; height:74px; " src="/assets/order/icon/van.png"></image>
+          <image  wx:if="{{tabIndex == 4}}" style="width:74px; height:74px; " src="/assets/order/icon/presentbox.png"></image>
+        </view>
+      </view>
+      <view class='addressl'>
+        <view class='left'>
+          <view style="font-size: 17px;color: #000000;">收到货地址</view>
+          <view style="font-size: 16px;color: #000000;">陈攀宇 17777777777</view>
+          <view style="font-size: 14px;color: #969696;">杭州市钱塘区白杨街道成蹊苑39菜鸟驿站</view>
+        </view>
+
+      </view>
+      <view style="padding:10px 0px; background:#FFF; margin-top:10px;">
+        <view class='item'>
+          <navigator class='content' hover-class="none" url="/pages/orderDetails/index">
+            <image src='/images/img/tx.jpg'></image>
+            <view class='text'>
+              <view class='spec'>
+                <view class='left'>黑色棉麻长裤</view>
+                <view class='right'>¥200</view>
+              </view>
+              <view class='spec' style="font-size: 13px;color: #969696; margin-top:8px;">颜色：黑色</view>
+              <view class='spec2'>
+                <view class='left'>175/455</view>
+                <view class='right'>×2</view>
+              </view>
+
+            </view>
+          </navigator>
+
+        </view>
+        <view class='item'>
+          <navigator class='content' hover-class="none" url="">
+            <image src='/images/img/tx.jpg'></image>
+            <view class='text'>
+              <view class='spec'>
+                <view class='left'>黑色棉麻长裤</view>
+                <view class='right'>¥200</view>
+              </view>
+              <view class='spec' style="font-size: 13px;color: #969696; margin-top:8px;">颜色：黑色</view>
+              <view class='spec2'>
+                <view class='left'>175/455</view>
+                <view class='right'>×2</view>
+              </view>
+
+            </view>
+          </navigator>
+
+        </view>
+         <view class='leandr1' wx:if="{{tabIndex == 2}}">
+         
+          <view  class='right'>
+           
+              <navigator style="background: #F6F6F6;border-radius: 4px;line-height: 32px;padding: 0 8px; margin-right:8px;" url="/pages/applyhuan/applyhuan" hover-class="none" >
+            <text  class="texthh">申请换货</text>
+          </navigator>
+          </view>
+        </view>
+         <view class='leandr1' wx:if="{{tabIndex == 3}}">
+         
+          <view  class='right'>
+           
+             <navigator style="background: #F6F6F6;border-radius: 4px;line-height: 32px;padding: 0 8px; margin-right:8px;" url="/pages/applyhuan/applyhuan" hover-class="none" >
+            <text  class="texthh">申请换货</text>
+          </navigator>
+          </view>
+        </view>
+         <view class='leandr1' wx:if="{{tabIndex == 4}}">
+         
+          <view  class='right'>
+          <navigator style="background: #F6F6F6;border-radius: 4px;line-height: 32px;padding: 0 8px; margin-right:8px;" url="/pages/applyhuan/applyhuan" hover-class="none" >
+            <text  class="texthh">申请换货</text>
+          </navigator>
+          <navigator style="background: #F6F6F6;border-radius: 4px;line-height: 32px;padding: 0 8px;"  url="/pages/applyTuihuo/applyTuihuo" hover-class="none" >
+            <text  class="texthh">申请退货</text>
+          </navigator>
+          </view>
+        </view>
+        <view class='leandr1'>
+          <view class='left'>商品金额</view>
+          <view class='right'>
+            <text class="text1">¥3528</text>
+          </view>
+        </view>
+        <view class='leandr1'>
+          <view class='left'>运费</view>
+          <view class='right'>
+            <text class="text1">¥3528</text>
+          </view>
+        </view>
+        <view class='leandr1'>
+          <view class='left'>优惠券</view>
+          <view class='right'>
+            <text class="text2">-¥35</text>
+            <text class="text1">></text>
+          </view>
+        </view>
+        <view class='leandr1'>
+          <view class='left'>总金额</view>
+          <view class='right'>
+            <text class="text1">¥3528</text>
+          </view>
+        </view>
+      </view>
+      <view style='background:#FFF;'>
+        <view class='leandr1'>
+          <view class='left' style="font-size: 18px;color: #000000;">订单信息</view>
+
+        </view>
+        <view class='leandr1'>
+          <view class='left'>支付方式</view>
+          <view class='right'>
+            <text class="text1">微信支付</text>
+          </view>
+        </view>
+        <view class='leandr1'>
+          <view class='left'>订单编号</view>
+          <view class='right'>
+            <text class="text1">12932787980239897</text>
+          </view>
+        </view>
+        <view class='leandr1'>
+          <view class='left'>下单时间</view>
+          <view class='right'>
+            <text class="text1">2024/05/24 18:26:06</text>
+          </view>
+        </view>
+
+      </view>
+
+
+    </view>
+
+
+
+
+  </scroll-view>
+  <view class='btn'  wx:if="{{tabIndex == 1}}">
+    <text style="background: #F6F6F6; font-size: 17px; color: #969696;">取消</text>
+    <text>去付款</text>
+  </view>
+   <view class='btn'  wx:if="{{tabIndex == 2}}">
+    <text bindtap='toshjd' style="background: #F6F6F6; font-size: 17px; color: #969696;">查看物流</text>
+    <text>确认收货</text>
+  </view>
+   <view class='btn'  wx:if="{{tabIndex == 3}}">
+    <text style="background: #F6F6F6; font-size: 17px; color: #969696;">查看物流</text>
+    <text>确认收货</text>
+  </view>
+   <view class='btn'  wx:if="{{tabIndex == 4}}">
+    <text style="background: #F6F6F6; font-size: 17px; color: #969696;">删除订单</text>
+    <text>再次购买</text>
+  </view>
+</view>

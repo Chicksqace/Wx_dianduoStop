@@ -1,0 +1,24 @@
+<view class="main">
+  <view class='data'>
+     <view class='item'>
+      <text>手机号</text>
+      <input type='number' value="{{mobile}}" bindinput="bindKeyMobile"  placeholder='11位手机号码'></input>
+       <text style="background:#F6f6f6;font-size:12px;padding:0 2px;text-align:center;">获取验证码</text>
+    </view>
+      <view class='item'>
+      <text>验证码</text>
+      <input type='number' placeholder='输入验证码'></input>
+    </view>
+   
+      <view class='item' style='border:0px;'>
+        <view class='choice'  bindtap='defaultFun' data-item="{{item}}">
+        <image src='/images/img/choice_y.png'></image>
+        </view>
+        <view>
+         <text style="margin-left:10px;">我同意加入会员计划</text>
+         <text style="margin-left:10px;">条款和条件</text>
+        </view>
+    </view>
+  </view>
+  <view class='btn active' bindtap='submitFun'>保存</view>
+</view>

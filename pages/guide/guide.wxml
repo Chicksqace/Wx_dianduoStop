@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="header">
+    <text>导购助手</text>
+  </view>
+
+  <view class="chat-area">
+    <block wx:if="{{chatMessages.length === 0}}">
+      <image class="empty-image"></image>
+      <text class="empty-text">开始聊天吧！我可以帮助您解答问题。</text>
+    </block>
+    <block wx:else>
+      <view wx:for="{{chatMessages}}" wx:key="index" class="message {{item.type}}">
+        <text>{{item.content}}</text>
+      </view>
+    </block>
+  </view>
+
+  <view class="input-area">
+    <input type="text" placeholder="请输入问题..." bindinput="inputChange" value="{{inputValue}}" />
+    <button bindtap="sendMessage">发送</button>
+  </view>
+</view>

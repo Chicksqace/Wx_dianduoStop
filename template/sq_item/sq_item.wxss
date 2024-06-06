@@ -1,0 +1,35 @@
+/* template/sq_item/sq_item.wxss */
+.item_content_top{
+  display: flex;
+  border: 1rpx solid #1afa29;
+  margin-top: 20rpx;
+}
+.item_content_top .item_content_left image{
+ width: 100rpx;
+ height: 100rpx;
+  
+}
+.item_content_bottom{
+ display: flex;
+ justify-content: flex-end;
+ border: 1rpx solid #1afa29;
+ border-top: 0rpx solid;
+}
+.icon{
+width: 160rpx;
+}
+.icon text{
+ 
+ display: inline-block;
+ overflow: hidden;
+}
+.icon image{
+ width: 50rpx;
+ height: 50rpx;
+}
+.pl{
+    padding: 2px;
+    border: #96867f solid 1px ;
+    border-radius: 20px;
+    background-color: azure;
+}

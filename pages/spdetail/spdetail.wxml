@@ -1,0 +1,86 @@
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" 
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="goods_infor_top">
+  <view class="goods_title">
+    精选蓝莓酥
+    <view class="goods_collect_btn" bindtap="collect">
+      <view wx:if="{{iscollect}}">
+        <image src="../../images/icon-aixin.png" class="goods_collect_img"></image>
+      </view>
+      <view wx:else>
+        <image src="../../images/icon-aixin1.png" class="goods_collect_img"></image>
+      </view> 
+      <text wx:if="{{iscollect}}">已收藏</text>
+      <text wx:else>收藏</text>
+    </view>
+  </view>
+  <view class="goods_price">
+    <text>¥169</text>
+    <text class="goods_old_price">¥269</text>
+  </view>
+  <view class="goods_deliver">
+    *本产品由 品牌商 提供发货服务。
+  </view>
+</view>
+<view class="goods_infor_pre">
+  <view class="goods_infor_txt">
+    <view class="goods_infor_brand"></view>
+    <text>蓝莓酥是一种美味的糕点，通常由酥皮和蓝莓馅料制成。酥皮一般由黄油、面粉和糖混合而成，经过切割和层叠后形成多层薄片状。馅料则是由新鲜或冷冻的蓝莓、糖和一些柠檬汁混合而成。蓝莓酥在烘烤过程中会散发出一股诱人的香气，口感酥脆，外皮金黄色，内馅甜美多汁。它既可以作为下午茶点心享用，也可以作为甜点在晚餐后品尝。蓝莓酥不仅美味可口，还富含抗氧化物质和维生素C等营养成分，有助于保持健康和增强免疫力。</text>
+  </view>
+</view>
+<view class="goods_infor_raw">
+  <view class="goods_infor_item">
+    <text>【品 牌】</text>蓝莓酥
+  </view>
+  <view class="goods_infor_item">
+    <text>【产 地】</text>浙江杭州
+  </view>
+  <view class="goods_infor_item">
+    <text>【净 含 量】</text>300g/罐
+  </view>
+  <view class="goods_infor_item">
+    <text>【保 质 期】</text>12月
+  </view>
+  <view class="goods_infor_item">
+    <text>【生产日期】</text>2023/6/20
+  </view>
+  <view class="goods_infor_item">
+    <text>【储蓄方法】</text>低温避光存储
+  </view>
+  <view class="goods_infor_item">
+    <text>【适用人群】</text>老少皆宜
+  </view>
+  <view class="goods_infor_item">
+    <text>【食用方法】</text>直接食用或兑水
+  </view>
+  <view class="goods_infor_item">
+    <text>【温馨提示】</text>请使用60度一下温水
+  </view>
+</view>
+<view class="goods_detail">
+  <view class="goods_detail_title">商品详情</view>
+  <view>
+    <image bindload="cusImageLoad" src="../../images/IMG_0466.jpg" style="width:{{imageWidth}};height:{{imageHeight}}"></image>
+  </view>
+</view>
+<view class="goods_bottom"></view>
+<view class="goods_bottom_btn">
+  <view>
+    <view class="goods_one">
+      <view class="goods_car_num">
+        <span>0</span>
+      </view>
+    </view>
+    <view class="goods_half_half red">前往商城</view>
+    <view class="goods_half_half blue">加入购物车</view>
+    <view class="goods_half_half green" bindtap="go">前往付款</view>
+  </view>
+</view>
